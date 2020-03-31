@@ -1,8 +1,110 @@
 <html lang="en">
     <head>
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color:orange;
+            }
+            header {
+                text-align: center;  
+            }
+            h1 {
+                text-align: center;
+            }
+            a {
+                padding: 15px;
+            }
+            #nav-bar {
+                padding-left: 13%;
+                position: fixed;
+            }
+            .nav-link {
+                padding: 20px;
+                margin: 20px;
+            }
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
 
+            @media only screen and (max-width: 768px) {
+             /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+                }
+            }
+            .flex-container {
+                display: flex;
+                justify-content: center;
+            }
+            .flex-container > div {
+                background-color: beige;
+                width: 125px;
+                margin: 30px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 20px;
+            }
+            /* unvisited link */
+            a:link {
+                color: blue;
+            }
+            /* visited link */
+            a:visited {
+                color: red;
+            }
+            /* mouse over link */
+            a:hover {
+                color: purple;
+            }
+            /* selected link */
+            a:active {
+                color: green;
+            }
+        </style>
+        <title id="title">Product Landing Page</title>
     </head>
     <body>
-        
+        <header id="header">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#learn-more">Learn More</a>
+                <a class="nav-link" href="#more-cool-products">More Cool Products</a>
+                <a class="nav-link" href="#i-want-a-5-finger-discount">I Want A 5 Finger Discount</a>
+            </nav><br>
+            <h1>Finger Hands!</h1>
+            <img id="header-img" src="https://img.buzzfeed.com/buzzfeed-static/static/2019-09/5/18/asset/3334e24611bf/sub-buzz-328-1567709798-1.png?downsize=600:*&output-format=auto&output-quality=auto">
+        </header><br>
+            <center>
+                <h2>These are hands down the best finger hands you can get your hands on! They are very handy for all sorts of tasks. Hail a cab, wave at a stranger, hand someone your resume, and more!</h2>
+            </center>
+                <section id="learn-more">
+            <center>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/TR_8SDNQ0ks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+            </section>
+        <section id="more-cool-products">
+        </section>
+        <section id="i-want-a-5-finger-discount">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <center>
+                    <input id="email" type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required>
+                    <input id="submit" type="submit" value="submit">
+                </center>
+            </form>
+        </section>
+        <div class="flex-container">
+            <div>Buy on <a href="#">Amazon!</a></div>
+            <div>Buy on <a href="#">Apple!</a></div>
+            <div>Buy on <a href="#">Facebook!</a></div>
+        </div>
     </body>
 </html>
